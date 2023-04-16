@@ -36,7 +36,7 @@ fetch(video_http + new URLSearchParams({
 
     const makeVideoCard= (data) =>{
     // console.log(data.snippet.channelTitle);
-        console.log(data.snippet.customUrl);
+        console.log(data);
         videoCardContainer.innerHTML += `
         <div class="video" onclick="location.href='https://www.youtube.com/watch?v=${data.id}'">
             <img src="${data.snippet.thumbnails.high.url}" class="thumbnail" alt="">
