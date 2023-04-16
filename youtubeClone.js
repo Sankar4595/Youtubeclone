@@ -13,7 +13,7 @@ fetch(video_http + new URLSearchParams({
     }))
     .then(res=> res.json())
     .then(data=>{
-        // console.log(data);
+        console.log(data);
         data.items.forEach(item => {
             getChannelIcon(item);
             // subscription(item);
